@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /identity
+spring:
+  datasource:
+    url: "jdbc:mysql://localhost:3306/identity_service"
+    username: root
+    password: abcd1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  signerKey: "P8hJr3HwClSBP86zAQkRa/LM6tOqoAdJKtFOtlvrUlCLS8lz03zADyJsI5qyGKM2"
